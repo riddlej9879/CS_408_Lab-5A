@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="@string/lbl_dist_title_text"
+        android:textSize="24sp" />
+
+    <!--  Left side labels  -->
+    <TextView
+        android:id="@+id/mileLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:gravity="bottom"
+        android:text="@string/mileLblText"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/kilometerLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="117dp"
+        android:gravity="bottom"
+        android:text="@string/kilometerLblText"
+        android:textAlignment="gravity"
+        android:textSize="18sp" />
+
+    <!--  Right side input  -->
+    <EditText
+        android:id="@+id/mileInput"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="75dp"
+        android:autofillHints="@string/mileHint"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/mileInputText"
+        android:textSize="18sp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+    <EditText
+        android:id="@+id/kilometerInput"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="117dp"
+        android:autofillHints="@string/kilometerHint"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/kilometerInputText"
+        android:textSize="18sp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/convertDist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="201dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/convertDist" />
+</FrameLayout>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Lab_5A-CalculatorRemix</string>
+    <string name="btn_tip_text">Tip</string>
+    <string name="btn_temp_text">Temp</string>
+    <string name="btn_dist_text">Dist</string>
+    <string name="fragment_id">#</string>
+
+    <!-- Main Activity -->
+    <!-- Button Text -->
+    <string-array name="btn_text">
+        <item name="tip">Tips</item>
+        <item name="temp">Temperature</item>
+        <item name="dist">Distance</item>
+    </string-array>
+    <!-- Button Tags -->
+<!--    <string-array name="btn_tags">-->
+<!--        <item name="tip">tip</item>-->
+<!--        <item name="temp">temp</item>-->
+<!--        <item name="dist">dist</item>-->
+<!--    </string-array>-->
+
+    <!-- Tip Converter Fragment -->
+    <string name="lbl_tip_title_text">Tip Calculator</string>
+    <string name="totalBillText">Total bill:</string>
+    <string name="tip_percentage">Tip percentage:</string>
+    <string name="number_of_people">Number of people:</string>
+    <string name="totalInputText">""</string>
+    <string name="percentInputText">""</string>
+    <string name="peopleInputText">""</string>
+    <string name="totalInputHint">Enter bill total</string>
+    <string name="percentInputHint">Tip amount as percent</string>
+    <string name="peopleInputHint">Number of people</string>
+    <string name="calcBtnText">Calculate</string>
+    <string name="calcBtnTag">calc_tip</string>
+    <string name="splitLblText">Total per person:</string>
+    <string name="splitOutputText" />
+    <string name="InputError"> </string>
+    <string name="InputMissing"> </string>
+    <string name="OutputError"> </string>
+
+    <!-- Temp Converter Fragment -->
+    <string name="lbl_temp_title_text">Temperature Converter</string>
+    <string name="fahrenheitLblText">Fahrenheit:</string>
+    <string name="celsiusLblText">Celsius:</string>
+    <string name="fahrenheitInputText"> </string>
+    <string name="celsiusInputText"> </string>
+    <string name="convertTemp">Convert</string>
+    <string name="fahrenheitHint">Enter temp in F</string>
+    <string name="celsiusHint">Enter temp in C</string>
+
+    <!-- Dist Converter Fragment -->
+    <string name="lbl_dist_title_text">Distance Converter</string>
+    <string name="mileLblText">Miles:</string>
+    <string name="kilometerLblText">Kilometers:</string>
+    <string name="mileInputText"> </string>
+    <string name="kilometerInputText"> </string>
+    <string name="convertDist">Convert</string>
+    <string name="mileHint">Enter miles</string>
+    <string name="kilometerHint">Enter kilometers</string>
+</resources>

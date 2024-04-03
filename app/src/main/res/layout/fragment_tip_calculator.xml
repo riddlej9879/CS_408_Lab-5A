@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ObsoleteLayoutParam, LabelFor, SpeakableTextPresentCheck"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tipTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/lbl_tip_title_text"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textTotalBill"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  Left side labels  -->
+    <TextView
+        android:id="@+id/textTotalBill"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/totalBillText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/percentLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="117dp"
+        android:text="@string/tip_percentage"
+        android:textAlignment="gravity"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/peopleLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="159dp"
+        android:text="@string/number_of_people"
+        android:textAlignment="gravity"
+        android:textSize="18sp" />
+
+    <!--  Right side input  -->
+    <EditText
+        android:id="@+id/totalInput"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="75dp"
+        android:autofillHints="@string/totalInputHint"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/totalInputText"
+        android:textSize="18sp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+    <EditText
+        android:id="@+id/percentInput"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="117dp"
+        android:autofillHints="@string/percentInputHint"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/percentInputText"
+        android:textSize="18sp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+    <EditText
+        android:id="@+id/peopleInput"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="159dp"
+        android:autofillHints="@string/peopleInputHint"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/peopleInputText"
+        android:textSize="18sp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/calcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="201dp"
+        android:layout_marginStart="120dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/calcBtnText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftHorizontalLayout" />
+
+    <!--  Tip Calc Results  -->
+    <TextView
+        android:id="@+id/splitLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="249dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center|end"
+        android:text="@string/splitLblText"
+        android:textAlignment="gravity"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/splitOutputLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="249dp"
+        android:layout_weight="1"
+        android:gravity="center|start"
+        android:text="@string/splitOutputText"
+        android:textAlignment="gravity"
+        android:textSize="18sp" />
+</FrameLayout>
